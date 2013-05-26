@@ -2,7 +2,7 @@ Apache Traffic Server™ はインターネットアクセスを加速させ、�
 
 この章は次のようなトピックについて書いてあります。
 
-- What Is Apache Traffic Server?
+- [What Is Apache Traffic Server?](#apache-traffic-server-)
 - Traffic Server Deployment Options
   - Traffic Server as a Web Proxy Cache
   - Traffic Server as a Reverse Proxy
