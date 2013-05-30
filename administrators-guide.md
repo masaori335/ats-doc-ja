@@ -109,6 +109,27 @@ Traffic Server は遅くて月並みなリゾルバライブラリに渡すよ�
 
 ## Traffic Server Processes
 
+Traffic Server はリクエストを返し、システムの状態を管理/制御/監視することを協調して動くための3つのプロセスを含んでいます。
+この３つのプロセスは下に説明されています。
+
+- `traffic_server` プロセスは Traffic Server のトランザクションプロセッシングエンジンです。
+  コネクションをアクセプトしたり、プロトコルリクエストを処理したり、キャッシュやオリジンサーバーからドキュメントを提供することに責任を持ちます。
+
+- `traffic_manager` プロセスは Traffic Server への命令と管理機能です。起動や監視と `traffic_server` プロセスを再設定したりすることに責任を持ちます。
+  `traffic_manager` プロセスはプロキシオートコンフィギュレーションポートや統計のインターフェイスやクラスター管理とバーチャル IP フェイルオーバーについても責任を持ちます。
+
+  `traffic_manager` プロセスが `traffic_server` プロセスが失敗していることを検知した場合、即座にプロセスを再起動するだけでなく、すべてのリクエストのコネクションキューをメンテナンスします。
+  サーバーが完全に再起動する数秒前に到着したすべてのインカミングコネクションはコネクションキューに格納され、最初に来たものから順に処理されます。
+  このコネクションキューはすべてのサーバーの再起動の際のダウンタイムからユーザーを守ります。
+
+- `traffic_cop` プロセスは `traffic_server` と `traffic_manager` プロセスの両方の状態をモニターします。
+  `traffic_cop` プロセスは定期的(毎分数回)に静的なウェブページを取得するハートビートリクエストを渡すことで `traffic_server` と `traffic_manager` に問い合わせます。
+  失敗したとき(一定期間の間にレスポンスが帰って来ないときや不正なレスポンスを受け取ったとき), `traffic_cop` は `traffic_manager` と `traffic_server` プロセスを再起動します。
+
+次の図は Traffic Server の3つのイラストです。
+
+[http://trafficserver.apache.org/images/admin/process.jpg](http://trafficserver.apache.org/images/admin/process.jpg)
+
 ## Administration Tools
 
 # Traffic Analysis Options
