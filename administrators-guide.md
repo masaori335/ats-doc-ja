@@ -132,6 +132,18 @@ Traffic Server はリクエストを返し、システムの状態を管理/制�
 
 ## Administration Tools
 
+Traffic Server は次のような管理オプションを提供しています。
+
+- Traffic Line コマンドラインインターフェイスはテキストベースのインターフェースです。Traffic Server のパフォーマンスとネットワークトラフィックを監視できます。
+  また同じように、Traffic Server システムを設定することもできます。
+  Traffic Line によって独立したコマンドや一連のコマンドのスクリプトをシェルで実行することができます。
+
+- Traffic Shell コマンドラインインターフェイスは追加のコマンドラインツールで、Traffic Server システムを監視したり設定したりする独立したコマンドを実行することができます。
+  Traffic Line や Traffic Shell を通じたどんな変更も自動的に設定ファイルを作ります。
+
+- 最後に、多くのな言語から使うことのできるクリーンな C API があります。
+  Traffic Server Admin Client は Perl でこのことを示しています。
+
 # Traffic Analysis Options
 
 # Traffic Server Security Options
