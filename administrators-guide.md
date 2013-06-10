@@ -146,4 +146,21 @@ Traffic Server は次のような管理オプションを提供しています�
 
 # Traffic Analysis Options
 
+Traffic Server はネットワークトラフィックの分析と監視のためのいくつかのオプションを提供しています。
+
+- Traffic Line と Traffic Shell はネットワークトラフィック情報から入手した統計情報を集めて処理することを可能にします。
+
+- トランザクションロギングは Traffic Server が処理したへすべてのリクエストとすべての検知したエラーの情報を (ログファイルの中に) 記録することを可能にします。
+  ログファイルを分析することによって、どれほどのクライアントが Traffic Sever キャッシュを使用し、どれくらいの情報がリクエストされ、どのページがポピュラーなのかを確認することができます。
+  特定のトランザクションがなぜエラーになり、 そのときの Traffic Server の状態がどうだったのかみることもできます。
+  例えば、 Traffic Server が再起動したときや、クラスターコミュニケーションがタイムアウトしたときなどです。
+
+　Traffic Server は Squid や Netscape などのいくつかの標準的なログフォーマットや固有のフォーマットをサポートしています。
+  off-the-shelf 分析パッケージによって標準的なフォーマットのログを分析することができます。
+  ログファイルの分析を助けるために、特定のプロトコルやホストの情報を含むようにログファイルを分割することができます。
+
+トラフィック分析オプションは [Monitoring Traffic](http://trafficserver.apache.org/docs/trunk/admin/monitoring-traffic/) でより詳しく書かれています。
+
+Traffic Server ロギングオプションは [Working with Log Files](http://trafficserver.apache.org/docs/trunk/admin/working-log-files/) に書かれています。
+
 # Traffic Server Security Options
