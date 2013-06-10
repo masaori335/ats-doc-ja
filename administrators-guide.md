@@ -164,3 +164,16 @@ Traffic Server はネットワークトラフィックの分析と監視のた�
 Traffic Server ロギングオプションは [Working with Log Files](http://trafficserver.apache.org/docs/trunk/admin/working-log-files/) に書かれています。
 
 # Traffic Server Security Options
+
+Traffic Server は Traffic Server システムと他のコンピュータネットワーク間のセキュアな通信を確立することを可能にする多数のオプションを提供しています。
+セキュリティオプションを使うことによって、次のようなことができます。
+
+- Traffic Server プロキシーキャッシュにアクセスするクライアントの管理
+- あなたのサイトのセキュリティ設定にマッチする複数の DNS サーバーを使うための Traffic Server の管理
+  例えば、Traffic Server はホストネームを解決する必要があるのがファイアーウォールの内側か外側かによって異なる DNS サーバーを使うことができます。
+  これは透過的にインターネット上の外部サイトにアクセスすることを提供しつつ、インターナルネットワーク設定をセキュアに保つことを可能にします。
+- クライアントが Traffic Server キャッシュからコンテンツにアクセスできるようになる前に、クライアントが認証されていることを検証する Traffic Server 設定
+- SSL ターミネーションオプションを使うことによる、クライアントと Traffic Server 間のリバースプロキシーモードと Traffic Server とオリジンサーバー間の安全な接続
+- SSL (Secure Socket Layer) によるアクセスの管理
+
+Traffic Server セキュリティオプションは [Security Options](http://trafficserver.apache.org/docs/trunk/admin/security-options/) に詳しく述べられています。
