@@ -173,7 +173,7 @@ Traffic Server は Traffic Server システムと他のコンピュータネッ�
   例えば、Traffic Server はホストネームを解決する必要があるのがファイアーウォールの内側か外側かによって異なる DNS サーバーを使うことができます。
   これは透過的にインターネット上の外部サイトにアクセスすることを提供しつつ、インターナルネットワーク設定をセキュアに保つことを可能にします。
 - クライアントが Traffic Server キャッシュからコンテンツにアクセスできるようになる前に、クライアントが認証されていることを検証する Traffic Server 設定
-- SSL ターミネーションオプションを使うことによる、クライアントと Traffic Server 間のリバースプロキシーモードと Traffic Server とオリジンサーバー間の安全な接続
+- SSL ターミネーションオプションを使うことによる、リバースプロキシーモードでのクライアントと Traffic Server 間と Traffic Server とオリジンサーバー間の安全な接続
 - SSL (Secure Socket Layer) によるアクセスの管理
 
 Traffic Server セキュリティオプションは [Security Options](http://trafficserver.apache.org/docs/trunk/admin/security-options/) に詳しく述べられています。
