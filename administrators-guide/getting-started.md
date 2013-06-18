@@ -108,3 +108,48 @@ sudo bin/traffic_server -R 1
 ```
 
 Traffic Server をシステム上にインストースした後、次のどれでもできます。
+
+# Start Traffic Server
+
+Traffic Server を手動で起動するには `trafficserver` コマンドに `start` を発行します。
+このコマンドは Traffic Server へのリクエストを処理したり、Traffic Server システムの状態を管理、制御、監視するためのすべてのプロセスを起動します。
+
+`trafficserver start` コマンドを実行するには次のようにします。
+
+```
+bin/trafficserver start
+```
+
+この時点でサーバーは [reverse proxy](http://trafficserver.apache.org/docs/trunk/admin/reverse-proxy-http-redirects/) のデフォルト設定で起動し、走っています。
+
+# Start Traffic Line
+
+Traffic Line は Traffic Server の統計を見たり、コマンドラインインターフェースによる Traffic Server の設定をする簡単な方法を提供しています。
+独立したコマンドの実行または複数のコマンドのスクリプトについては [Traffic Line Commands](http://trafficserver.apache.org/docs/trunk/admin/reverse-proxy-http-redirects/) にあります。
+
+Traffic Line コマンドは次のようなフォームを受け取ります。
+
+```
+bin/traffic_line -command argument
+```
+
+`traffic_line` のコマンドのリストを見るにはこのように実行してください。
+
+```
+bin/traffic_line -h
+```
+
+次のことに注意してください。
+`traffic_line` は管理者にとっては十分なツールである一方で、自動化のためには貧弱な選択です。
+とくに監視については。
+正しく監視する方法については [Monitoring Traffic](http://trafficserver.apache.org/docs/trunk/admin/monitoring-traffic/) の章を参照してください。
+
+# Stop Traffic Server
+
+Traffic Server を停止するには常に `trafficserver` コマンドに `stop` を渡します。
+このコマンドは全ての Traffic Server プロセス( `traffic_manager`, `traffic_server`, `traffic_cop` ) を停止します。
+手動で各プロセスを止めないでください。予想できない結果を招きます。
+
+```
+bin/trafficserver stop
+```
