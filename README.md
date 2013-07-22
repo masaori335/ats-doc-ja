@@ -18,7 +18,9 @@ Apache Traffic Server (以下 ATS) のドキュメントの日本語訳です。
 # Contribution
 
 Apache Traffic Server のドキュメントの各言語への翻訳プロジェクトが [Transifex](https://www.transifex.com/) というウェブサービス上にあります。
+
 Transifex へサインアップして、 Apache Traffic Server の日本語翻訳チームに参加してください。
+
 Transifex への参加は"翻訳者"と"レビューワー"という２つの方法があります。
 
 - 翻訳者 : 翻訳作業をする方
@@ -26,6 +28,6 @@ Transifex への参加は"翻訳者"と"レビューワー"という２つの方
 
 翻訳者／レビュワーどちらでも歓迎いたします。気軽にご参加ください。
 
-- Transifex : https://www.transifex.com/
-- Apache Traffic Server : https://www.transifex.com/projects/p/traffic-server-admin/
-- Apache Traffic Server Japanese Team : https://www.transifex.com/projects/p/traffic-server-admin/language/ja_JP/
+- [Transifex](https://www.transifex.com/)
+- [Apache Traffic Server @Transifex](https://www.transifex.com/projects/p/traffic-server-admin/)
+- [Apache Traffic Server @Transifex Japanese Team](https://www.transifex.com/projects/p/traffic-server-admin/language/ja_JP/)
