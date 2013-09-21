@@ -1,7 +1,7 @@
 # はじめに
 
 Apache Traffic Server (以下 ATS) のドキュメントの日本語訳です。
-ここで作業したものを Transifex に登録し、校正作業を行っています。
+原文が Transifex に上がっていれば、日本語訳を登録し、校正作業を行っています。
 
 # オリジナルサイト／リポジトリ
 
@@ -16,6 +16,12 @@ Apache Traffic Server (以下 ATS) のドキュメントの日本語訳です。
 - [Frequently Asked Questions] A running list of your most common questions
 
 # Contribution
+
+## Pull-Request
+
+日本語訳の追加／修正等の Pull-Request を送っていただければ、マージします。
+
+## Transifex
 
 Apache Traffic Server のドキュメントの各言語への翻訳プロジェクトが [Transifex](https://www.transifex.com/) というウェブサービス上にあります。
 
