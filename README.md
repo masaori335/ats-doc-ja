@@ -11,7 +11,8 @@ Apache Traffic Server (以下 ATS) のドキュメントの日本語訳です。
 # 翻訳
 (Work in progress)
 
-- [Administrator's Guide](./doc/admin/index.ja.rst) Installing, configuring and administrating Traffic Server
+- [Index](./doc_ja/index.ja.rst)
+- [Administrator's Guide](./doc_ja/admin/index.ja.rst) Installing, configuring and administrating Traffic Server
 - [SDK Programmer's Guide] Developing Traffic Server plug-ins and how the code works
 - [Frequently Asked Questions] A running list of your most common questions
 
