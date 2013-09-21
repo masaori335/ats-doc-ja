@@ -25,7 +25,7 @@ Apache Traffic Server (以下 ATS) のドキュメントの日本語訳です。
 
 Apache Traffic Server のドキュメントの各言語への翻訳プロジェクトが [Transifex](https://www.transifex.com/) というウェブサービス上にあります。
 
-Transifex へサインアップして、 Apache Traffic Server の日本語翻訳チームに参加してください。
+Transifex へサインアップして、 Apache Traffic Server の日本語翻訳チームに参加してください。OSS 利用であれば無料で登録することができます。
 
 Transifex への参加は"翻訳者"と"レビューワー"という２つの方法があります。
 
